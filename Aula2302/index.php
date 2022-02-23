@@ -25,6 +25,11 @@
             print('Minha idade é: '.$umavariavel.' anos e ');
             $outravariavel = "Gabriel";
             echo "Meu nome é: $outravariavel";
+            $total = 30 * 10 / 2 - 4 + 1;
+            $total++;
+            $total--;
+            --$total;
+            echo $total;
 
 
         ?>
