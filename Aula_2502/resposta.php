@@ -15,10 +15,23 @@
     <?php 
         $valor1 = $_POST['valor1']; 
         $valor2 = $_POST['valor2'];
-        $total = $valor1 + $valor2;
+        $soma = $valor1 + $valor2;
+        $sub = $valor1 - $valor2;
+        $mult = $valor1 * $valor2;
+        $div = $valor1 / $valor2;
+        
         if (($valor1 % 2) == 0)
-            echo "O valor 1 é: $valor1 e ele é par";   
-        echo "<br/>O valor 1 é: $valor1 e valor 2 é: $valor2 e o total é $total";
+            echo "O valor 1 é: $valor1 e ele é par";
+        else
+            echo "O valor 1 é: $valor1 e ele é impar";
+
+        if (($valor2 % 2) == 0)
+            echo "<br/>O valor 2 é: $valor2 e ele é par";
+        else
+            echo "<br/>O valor 2 é: $valor2 e ele é impar";
+
+        echo "<br/> A soma deles é: $soma <br/>A subtração deles é: $sub 
+        <br/>A multiplicação deles é: $mult <br/>A divisão deles é: $div";
            
     ?>
 
