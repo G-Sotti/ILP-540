@@ -11,43 +11,25 @@
     <title>Hello, word!</title>
   </head>
   <body>
-    <h1>Cálculos</h1>
+    <h1>Troco</h1>
     <?php 
-        $valor1 = $_POST['valor1']; 
-        $valor2 = $_POST['valor2'];
-        $soma = $valor1 + $valor2;
-        $sub = $valor1 - $valor2;
-        $mult = $valor1 * $valor2;
-       
-        if (($valor1 % 2) == 0)
-            echo "O valor 1 é: $valor1 e ele é par";
-        else
-            echo "O valor 1 é: $valor1 e ele é impar";
-
-        if (($valor2 % 2) == 0)
-            echo "<br/>O valor 2 é: $valor2 e ele é par";
-        else
-            echo "<br/>O valor 2 é: $valor2 e ele é impar";
-
-        $resultado = $valor1 % 2 == 0 ? "<br/>Valor 1 é par!" : "<br/>Valor 1 é impar!"; echo $resultado; //Operador ternário
-        $resultado = $valor2 % 2 == 0 ? "<br/>Valor 2 é par!" : "<br/>Valor 2 é impar!"; echo $resultado; //Operador ternário
-
-        if ($valor2 != 0)
-        {
-          $div = $valor1 / $valor2;
-          echo "<br/>A divisão deles é: $div";
-        }
-        else
-            echo "<br/>Não é possível a divisão por 0";
-  
-        echo "<br/> A soma deles é: $soma <br/>A subtração deles é: $sub 
-        <br/>A multiplicação deles é: $mult";
-
-        for ($i=0; $i<3; $i++)
-          echo "<br/>Valor de i com i++: $i";
+        $valprod = $_POST['Valor1']; 
+        $valpag = $_POST['Valor2'];
         
-        for ($i=0; $i<3; ++$i)
-          echo "<br/>Valor de i com ++i: $i";
+        if ($valpag > $valprod)
+        {
+          $sub = $valpag - $valprod;
+          echo "<br/>O troco é: R$$sub";
+        }
+
+        else if ($valpag == $valprod)
+        {
+          echo "<br/>Não existe valor de troco pois o valor pago é o mesmo valor do produto!";
+        }
+
+        else
+            echo "<br/>O valor pago é menor que o valor do produto!";
+            
 
     ?>
 
