@@ -17,7 +17,6 @@
         
         if ($num > 10)
             echo "<br/>O valor é maior que 10!!!";
-        
         else if ($num == 10)
             echo "<br/>O valor é 10!!!!";
         else
