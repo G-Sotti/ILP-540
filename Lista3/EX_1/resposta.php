@@ -9,23 +9,24 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>
-    <>10!
-  </title>
+  <title>Lista 3!</title>
 </head>
 
-<body>
-  <h1>Maior ou Menor</h1>
+<body class="container">
+  <h1>EX1 valida data!</h1>
   <?php
-  $num = $_POST['num'];
+  function verificaData($dia, $mes, $ano)
+  {
+    if (checkdate($mes, $dia, $ano))
+      echo "Essa é uma data válida!!";
+    else
+      echo "Essa não é uma data válida!!";
+  }
+  $diaIU = $_POST['dia'];
+  $mesIU = $_POST['mes'];
+  $anoIU = $_POST['ano'];
 
-  if ($num > 10)
-    echo "<br/>O valor é maior que 10!!!";
-  else if ($num == 10)
-    echo "<br/>O valor é 10!!!!";
-  else
-    echo "<br/>O valor é menor que 10!!!";
-
+  verificaData($diaIU, $mesIU, $anoIU);
   ?>
 
   <!-- Optional JavaScript; choose one of the two! -->
