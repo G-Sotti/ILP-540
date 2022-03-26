@@ -10,11 +10,30 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>Hello, word!</title>
+  <title>Lista 2!</title>
 </head>
 
-<body>
-  <h1>Hello, word!</h1>
+<body class="container">
+  <h1>Ex 5 Ordenação de vetor!</h1>
+  <form method="post" action="resposta.php">
+    <div class="row">
+      <?php
+        for($i = 1; $i <= 10; $i++){
+      ?>
+        <div class="col-3">
+          <label for="val<?=$i?>" class="label-control">Digite um valor: <?=$i?></label>
+          <input type="double" name="val<?=$i?>" id="val<?=$i?>" class="form-control"/>
+        </div>
+      <?php
+        }
+      ?>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+            <button type="submit" class="btn btn-warning">Ordenar</button>
+        </div>
+      </div>
+  </form> 
 
   <!-- Optional JavaScript; choose one of the two! -->
 

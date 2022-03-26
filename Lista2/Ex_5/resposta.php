@@ -10,11 +10,29 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>Hello, word!</title>
+    <title>Lista 2!</title>
 </head>
 
-<body>
-  <h1>Hello, word!</h1>
+<body class="container">
+  <h1>Ex 5 Ordenação de vetor!</h1>
+  <?php
+    for($i = 1; $i <=10; $i++){
+      $vetor[$i] = $_POST["val$i"];
+    }
+
+    asort($vetor);
+    echo "Ordenação crescente: <br/>";
+    foreach($vetor as $chave => $val){
+      echo "$val <br/>";
+    }
+
+    arsort($vetor);
+    echo "Ordenação decrescente: <br/>";
+    foreach($vetor as $chave => $val){
+      echo "$val <br/>";
+    }
+  ?>
+
 
   <!-- Optional JavaScript; choose one of the two! -->
 
