@@ -20,17 +20,17 @@
     $valor = $_POST["val$i"];
     if ($valor >= 1 && $valor <= 10) {
       $vetor[$i] = $_POST["val$i"];
-      echo "Valor $valor permitido <br/>";
+      echo "Vetor $i - Valor $valor permitido <br/>";
     } else
-      echo "Valor $valor  fora do conjunto permitido <br/>";
+      echo "Vetor $i - Valor $valor  fora do conjunto permitido <br/>";
   }
 
   foreach ($vetor as $chave => $valor) {
-    if ($pos == $valor) {
-      echo "Posição do valor desejado: $pos <br/>";
+    if ($valor == $pos) {
+      echo "Valor desejado: $pos, posição dele: vetor $chave <br/>";
     }
   }
- 
+
 
   ?>
 
