@@ -10,11 +10,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>Hello, word!</title>
+  <title>Aula 30/03!</title>
 </head>
 
 <body>
-  <h1>Hello, word!</h1>
+  <h1>Sistema em PHP!</h1>
+  <?php
+    $email = $_POST['email'];
+    //Abaixo a estrutra para criar um cookie nome + variável + tempo de duração (time() + (86400 * 1),"/") para 1 dia
+    setcookie("usuario", $email, time() + (86400 * 1), "/"); 
+    echo "Seja bem-vindo ".$_COOKIE['usuario'];
+  ?>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
