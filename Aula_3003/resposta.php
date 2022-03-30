@@ -28,7 +28,7 @@
             $_SESSION['usuario'] = $email;
             $_SESSION['acesso'] = true;
             echo "Bem-vindo usuário ".$_SESSION['usuario'];
-            echo '<a href="sair.php">Sair</a>';
+            echo '<br/><a href="sair.php">Sair</a>';
         }
         else {
             header('Location: index.php');
@@ -39,7 +39,7 @@
         session_start();
         if($_SESSION['acesso'] == true){
             echo "Seja bem-vindo usuario ".$_SESSION['usuario'];
-            echo '<a href="sair.php">Sair</a>';
+            echo '<br/><a href="sair.php">Sair</a>';
         }
         else{
             header('Location: index.php');
