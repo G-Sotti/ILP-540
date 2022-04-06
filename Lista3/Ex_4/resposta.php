@@ -15,10 +15,11 @@
 <body class="container">
   <h1>Ex4 divisores!</h1>
   <?php
-  for ($x = 0; $x <= 5; $x++) {
-    $array[$x] = $_POST["val$x"];
+  for ($i = 0; $i <= 5; $i++) {
+    $vetor[$i] = $_POST["val$i"];
   }
-  Soma($array);
+
+  /*Soma($array);
   function Soma($array)
   {
     $conta = 0;
@@ -32,7 +33,7 @@
   }
   foreach($soma as $chave => $val) {
     echo "$chave = $val <br/>";
-  }
+  }*/
   ?>
 
   <!-- Optional JavaScript; choose one of the two! -->

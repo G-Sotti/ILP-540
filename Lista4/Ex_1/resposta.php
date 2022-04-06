@@ -10,28 +10,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Lista 2!</title>
+  <title>Lista 4!</title>
 </head>
 
-<body class="container">
-    <h1>Ex3 Troca de valores repetidos por -</h1>
-    <?php
-        for ($i = 1; $i <= 10; $i++){
-            $vetor[$i] = $_POST["val$i"];
-        }
-
-        foreach ($vetor as $chave => $val){
-            $valrepetido = 0;
-            for ($i = 1; $i <= 10; $i++){
-                if($vetor[$i] == $val)
-                    $valrepetido++;
-            }
-            if ($valrepetido > 1)
-                $vetor[$chave] = "-";
-                echo "Valor: $vetor[$chave] <br/>";
-        }
-    
-    ?>
+<body>
+  <h1>Ex 1!</h1>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
