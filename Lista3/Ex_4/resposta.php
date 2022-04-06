@@ -15,25 +15,29 @@
 <body class="container">
   <h1>Ex4 divisores!</h1>
   <?php
-  for ($i = 0; $i <= 5; $i++) {
+  for ($i = 1; $i <= 5; $i++) {
     $vetor[$i] = $_POST["val$i"];
   }
 
-  /*Soma($array);
-  function Soma($array)
+  function Soma($valor)
   {
     $conta = 0;
-    for ($i = 0; $i < 5; $i++) {
-      $resto = $array[$i] % ($array[$i] - 1);
-      if ($resto == 0) {
-        $conta = $conta + $array[$i];
-        $soma[$i] = $conta;
+    if ($valor == 1) {
+      $conta = 1;
+    } else {
+      for ($i = 1; $i < $valor; $i++) {
+        $resto = $valor % $i;
+        if ($resto == 0) {
+          $conta = $conta + $i;
+        }
       }
     }
+    return $conta;
   }
-  foreach($soma as $chave => $val) {
+  foreach ($vetor as $chave => $val) {
     echo "$chave = $val <br/>";
-  }*/
+    echo Soma($val) . "<br/>";
+  }
   ?>
 
   <!-- Optional JavaScript; choose one of the two! -->
