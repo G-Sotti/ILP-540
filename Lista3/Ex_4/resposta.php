@@ -35,7 +35,7 @@
     return $conta;
   }
   foreach ($vetor as $chave => $val) {
-    echo "$chave = $val <br/>";
+    echo "Valor na posição $chave = $val \t soma dos divisores: ";
     echo Soma($val) . "<br/>";
   }
   ?>
