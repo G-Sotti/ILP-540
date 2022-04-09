@@ -13,8 +13,40 @@
   <title>Lista 4!</title>
 </head>
 
-<body>
+<body class="container">
   <h1>Ex 1!</h1>
+  <?php
+    if ($_POST) {
+        $volta = $_POST['volta'];
+        $tempo = $_POST['tempo'];
+        //Abaixo a estrutra para criar um cookie nome + variável + tempo de duração (time() + (86400 * 1),"/") para 1 dia
+        /*setcookie("usuario", $email, time() + (86400 * 1), "/"); 
+        echo "Seja bem-vindo ".$_COOKIE['usuario'];*/
+
+        session_start();
+        if (($volta >= 1) && ($tempo > "00:00")) {
+            $_SESSION['volta'] = $volta;
+            $_SESSION['tempo'] = $tempo;
+            $_SESSION['acesso'] = true;
+            echo "Volta: " . $_SESSION['volta'] . "<br/>";
+            echo "Tempo: " . $_SESSION['tempo'] . "<br/>";
+            echo '<br/><a href="sair.php">Sair</a>';
+        } else {
+            header('Location: index.php');
+            exit;
+        }
+    } else {
+        session_start();
+        if ($_SESSION['acesso'] == true) {
+            echo "Volta: " . $_SESSION['volta'] . "<br/>";
+            echo "Tempo: " . $_SESSION['tempo'] . "<br/>";
+            echo '<br/><a href="sair.php">Sair</a>';
+        } else {
+            header('Location: index.php');
+            exit;
+        }
+    }
+    ?>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
