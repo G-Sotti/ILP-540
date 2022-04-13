@@ -2,37 +2,30 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>Lista 4!</title>
+    <title>Lista 4!</title>
 </head>
 
 <body class="container">
-  <h1>Ex 1!</h1>
-  <form action="resposta.php" method="POST">
-  <?php
-  $voltas = $_POST["qtde_volta"];
-  for ($i = 1; $i <= $voltas; $i++) {
-  ?>
-
-        <div class="col-3">
-          <label for="tempo" class="label-control">Informe o tempo</label>
-          <input type="time" name="tempo" id="tempo" class="form-control" />
+    <h1>Ex 1!</h1>
+    <form action="index.php" method="POST">
+        <div class="row mt-3">
+            <div class="col-3">
+                <label for="qtde_volta" class="label-control">Informe a quantidade de voltas</label>
+                <input type="number" name="qtde_volta" id="qtde_volta" class="form-control" />
+            </div>
         </div>
-      </div>
-    <?php
-  }
-    ?>
-    <div class="row mt-3">
-      <div class="col">
-        <button type="submit" class="btn btn-primary">Gravar</button>
-      </div>
-    </div>
+        <div class="row mt-3">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Gravar</button>
+            </div>
+        </div>
     </form>
     <!-- Optional JavaScript; choose one of the two! -->
 
