@@ -1,0 +1,15 @@
+{
+    "name": "usuario/listas-php",
+    "autoload": {
+        "psr-4": {
+            "Usuario\\ListasPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "G-Sotti",
+            "email": "gabriel_sotti@hotmail.com"
+        }
+    ],
+    "require": {}
+}

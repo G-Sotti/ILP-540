@@ -1,0 +1,15 @@
+{
+    "name": "usuario/ilp-540",
+    "autoload": {
+        "psr-4": {
+            "Usuario\\Ilp540\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "G-Sotti",
+            "email": "gabriel_sotti@hotmail.com"
+        }
+    ],
+    "require": {}
+}
