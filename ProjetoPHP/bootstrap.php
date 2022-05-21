@@ -13,11 +13,13 @@ $path = $_SERVER["PATH_INFO"];
 $router = new \Aluno\ProjetoPhp\Router($method, $path);
 
 //ADICIONAR AS ROTAS VÁLIDAS ABAIXO
-$router->post('/cliente/novo','Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
-$router->post('/cliente/inserir','Aluno\ProjetoPhp\Controller\ClientesController::inserirClientes');
+
 $router->get("/ola-mundo", function(){
     return "Olá Mundo!";
 });
+
+$router->get('/cliente/novo','Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
+$router->post('/cliente/inserir','Aluno\ProjetoPhp\Controller\ClientesController::inserirClientes');
 
 $router->get('/exemplo','Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
