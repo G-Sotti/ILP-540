@@ -15,7 +15,7 @@
 
 <body>
   <h1>Inserir Produtos!</h1>
-  <form action="/produtos/inserir" method="post">
+  <form action="/produto/inserir" method="post">
       <div class="row">
           <div class="col-5">
               <label for="nome" class="label-control">
