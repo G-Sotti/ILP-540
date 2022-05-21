@@ -2,6 +2,8 @@
 
 namespace Aluno\ProjetoPhp\Model\DAO;
 
+use PDO;
+
 class Conexao{
     public static function conectar(){
         return 
