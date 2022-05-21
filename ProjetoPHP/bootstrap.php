@@ -19,7 +19,7 @@ $router->get("/ola-mundo", function(){
 });
 
 $router->get('/cliente/novo','Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
-$router->post('/cliente/inserir','Aluno\ProjetoPhp\Controller\ClientesController::inserirClientes');
+$router->post('/cliente/inserir','Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
 
 $router->get('/produto/novo','Aluno\ProjetoPhp\Controller\ProdutoController::abrirFormularioInserir');
 $router->post('/produto/inserir','Aluno\ProjetoPhp\Controller\ProdutoController::inserirProduto');
