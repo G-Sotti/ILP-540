@@ -14,7 +14,7 @@
 
 <body class="container">
     <h1>Exemplo</h1>
-    <form method="POST" action="/L1Ex5-resultado">
+    <form method="POST" action="/l1ex5-resultado">
     <div class="row">
             <div class="col-3">
                 <label for="nt1" class="label-control">

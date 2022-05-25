@@ -4,12 +4,12 @@
 namespace Usuario\ListasPhp\Controller;
 
 
-class ExercicioController
+class ExercicioController3
 {
 
     public static function exibir()
     {
-        require_once("../src/View/L1Ex3.php");
+        require_once("../src/View/Lista1_Ex3.php");
     }
     public static function exibirResultado()
     {
@@ -22,6 +22,6 @@ class ExercicioController
         else
             echo "<br/>O valor é menor que 10!!!";
 
-        require_once("../src/View/L1Ex3.php");
+        require_once("../src/View/Lista1_Ex3.php");
     }
 }

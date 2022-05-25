@@ -4,12 +4,12 @@
 namespace Usuario\ListasPhp\Controller;
 
 
-class ExercicioController
+class ExercicioController5
 {
 
     public static function exibir()
     {
-        require_once("../src/View/L1Ex5.php");
+        require_once("../src/View/Lista1_Ex5.php");
     }
     public static function exibirResultado()
     {
@@ -25,6 +25,6 @@ class ExercicioController
         else
           echo "<br/>O aluno está reprovado!";  
 
-        require_once("../src/View/L1Ex5.php");
+        require_once("../src/View/Lista1_Ex5.php");
     }
 }

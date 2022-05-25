@@ -18,12 +18,20 @@ $router->get("/ola-mundo", function(){
     return "Olá Mundo!";
 });
 
-$router->get('/l1ex1','Aluno\ListasPhp\Controller\Lista1_Ex1Controller::exibir');
-$router->post("/l1ex1-resultado", 'Aluno\ListasPhp\Controller\Lista1_Ex1Controller::exibirResultado');
+$router->get('/l1ex1','Usuario\ListasPhp\Controller\ExercicioController1::exibir');
+$router->post('/l1ex1-resultado', 'Usuario\ListasPhp\Controller\ExercicioController1::exibirResultado');
 
-$router->get('/L1Ex2','Aluno\ListasPhp\Controller\Lista1_Ex2Controller::exibir');
-$router->post("/L1Ex2-resultado", 'Aluno\ListasPhp\Controller\Lista1_Ex2Controller::exibirResultado');
+$router->get('/l1ex2','Usuario\ListasPhp\Controller\ExercicioController2::exibir');
+$router->post('/l1ex2-resultado', 'Usuario\ListasPhp\Controller\ExercicioController2::exibirResultado');
 
+$router->get('/l1ex3','Usuario\ListasPhp\Controller\ExercicioController3::exibir');
+$router->post('/l1ex3-resultado', 'Usuario\ListasPhp\Controller\ExercicioController3::exibirResultado');
+
+$router->get('/l1ex4','Usuario\ListasPhp\Controller\ExercicioController4::exibir');
+$router->post('/l1ex4-resultado', 'Usuario\ListasPhp\Controller\ExercicioController4::exibirResultado');
+
+$router->get('/l1ex5','Usuario\ListasPhp\Controller\ExercicioController5::exibir');
+$router->post('/l1ex5-resultado', 'Usuario\ListasPhp\Controller\ExercicioController5::exibirResultado');
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 

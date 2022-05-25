@@ -4,11 +4,11 @@
 namespace Usuario\ListasPhp\Controller;
 
 
-class ExercicioController
+class ExercicioController2
 {
 
     public static function exibir(){
-        require_once("../src/View/L1Ex2.php");
+        require_once("../src/View/Lista1_Ex2.php");
     }
     public static function exibirResultado(){
         $valkg = $_POST['valkg'];
@@ -18,7 +18,7 @@ class ExercicioController
 
         echo "<br/>O valor a ser pago é R$$mult";
 
-        require_once("../src/View/L1Ex2.php");
+        require_once("../src/View/Lista1_Ex2.php");
     }
 
 }

@@ -4,11 +4,11 @@
 namespace Usuario\ListasPhp\Controller;
 
 
-class ExercicioController
+class ExercicioController1
 {
 
     public static function exibir(){
-        require_once("../src/View/l1ex1.php");
+        require_once("../src/View/Lista1_Ex1.php");
     }
     public static function exibirResultado(){
         $valprod = $_POST['valprod'];
@@ -20,7 +20,7 @@ class ExercicioController
             echo "<br/>Não existe valor de troco pois o valor pago é o mesmo valor do produto!";
         } else
             echo "<br/>O valor pago é menor que o valor do produto!";
-        require_once("../src/View/l1ex1.php");
+        require_once("../src/View/Lista1_Ex1.php");
     }
 
 }
