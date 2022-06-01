@@ -45,6 +45,7 @@
                 </div>
             </div>
         </form>
+    </div>
 
         <!-- Optional JavaScript; choose one of the two! -->
 
