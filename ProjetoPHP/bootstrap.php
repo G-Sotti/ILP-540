@@ -41,6 +41,7 @@ $router->post('/produto/editar/{id}','Aluno\ProjetoPhp\Controller\ProdutoControl
 
 $router->get('/produto/excluir/{id}','Aluno\ProjetoPhp\Controller\ProdutoController::excluirProduto');
 
+
 $router->get('/exemplo','Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
 $router->post("/exemplo-resultado", 'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
