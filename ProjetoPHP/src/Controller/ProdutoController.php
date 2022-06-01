@@ -10,6 +10,10 @@ class ClientesController{
         require_once "../src/View/inserir_produto.php";
     }
 
+    public static function abrirListaProdutos(){
+        require_once "../src/View/listar_produto.php";
+    }
+
     public static function inserirProduto(){
         $produto = new Produtos();
         $produto -> setDescricao($_POST['descricao']);

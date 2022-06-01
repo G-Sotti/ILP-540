@@ -26,6 +26,8 @@ $router->get('/clientes','Aluno\ProjetoPhp\Controller\ClientesController::abrirL
 $router->get('/produto/novo','Aluno\ProjetoPhp\Controller\ProdutoController::abrirFormularioInserir');
 $router->post('/produto/inserir','Aluno\ProjetoPhp\Controller\ProdutoController::inserirProduto');
 
+$router->get('/produto','Aluno\ProjetoPhp\Controller\ProdutoController::abrirListaProdutos');
+
 $router->get('/exemplo','Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
 $router->post("/exemplo-resultado", 'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
