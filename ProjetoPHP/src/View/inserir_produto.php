@@ -34,7 +34,7 @@
                     <label for="valor" class="label-control">
                         Informe o valor:
                     </label>
-                    <input type="float" class="form-control" name="valor" id="valor" />
+                    <input type="double" class="form-control" name="valor" id="valor" />
                 </div>
             </div>
             <div class="row mt-3">

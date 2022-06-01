@@ -35,6 +35,12 @@ $router->post('/produto/inserir','Aluno\ProjetoPhp\Controller\ProdutoController:
 
 $router->get('/produtos','Aluno\ProjetoPhp\Controller\ProdutoController::abrirListaProdutos');
 
+$router->get('/produto/alterar/{id}','Aluno\ProjetoPhp\Controller\ProdutoController::abrirFormularioAlterar');
+
+$router->post('/produto/editar/{id}','Aluno\ProjetoPhp\Controller\ProdutoController::editarProduto');
+
+$router->get('/produto/excluir/{id}','Aluno\ProjetoPhp\Controller\ProdutoController::excluirProduto');
+
 $router->get('/exemplo','Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
 $router->post("/exemplo-resultado", 'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
