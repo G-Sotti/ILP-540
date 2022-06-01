@@ -5,7 +5,7 @@ namespace Aluno\ProjetoPhp\Controller;
 use Aluno\ProjetoPhp\Model\DAO\ProdutosDAO;
 use Aluno\ProjetoPhp\Model\Entity\Produtos;
 
-class ClientesController{
+class ProdutoController{
     public static function abrirFormularioInserir(){
         require_once "../src/View/inserir_produto.php";
     }

@@ -23,10 +23,17 @@ $router->post('/cliente/inserir','Aluno\ProjetoPhp\Controller\ClientesController
 
 $router->get('/clientes','Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
 
+$router->get('/cliente/alterar/{id}','Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioAlterar');
+
+$router->post('/cliente/editar/{id}','Aluno\ProjetoPhp\Controller\ClientesController::editarCliente');
+
+$router->get('/cliente/excluir/{id}','Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
+
+
 $router->get('/produto/novo','Aluno\ProjetoPhp\Controller\ProdutoController::abrirFormularioInserir');
 $router->post('/produto/inserir','Aluno\ProjetoPhp\Controller\ProdutoController::inserirProduto');
 
-$router->get('/produto','Aluno\ProjetoPhp\Controller\ProdutoController::abrirListaProdutos');
+$router->get('/produtos','Aluno\ProjetoPhp\Controller\ProdutoController::abrirListaProdutos');
 
 $router->get('/exemplo','Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 

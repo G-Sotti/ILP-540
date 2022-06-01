@@ -17,10 +17,10 @@
     <div class="container">
         <h1>Listar Clientes!</h1>
         <?php
-        if (isset($resposta)){
-            if($resposta){
-                echo 
-                    '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        if (isset($resposta)) {
+            if ($resposta) {
+                echo
+                '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </symbol>
@@ -40,9 +40,9 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                      </div>';
-            }else{
-                echo 
-                    '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            } else {
+                echo
+                '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </symbol>
@@ -62,37 +62,30 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     </div>';
-                }
+            }
         }
         ?>
-        
+
         <table class="table table-hover">
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
+                <?php while ($linha = $resultado->fetch(PDO::FETCH_ASSOC)) { ?>
+                    <tr>
+                        <th scope="row"><?= $linha['id'] ?></th>
+                        <td><?= $linha['nome'] ?></td>
+                        <td><?= $linha['email'] ?></td>
+                        <td> <a href="/cliente/alterar/<?= $linha['id'] ?>" class="btn btn-warning">Alterar</a>
+                            <a href="/cliente/excluir/<?= $linha['id'] ?>" class="btn btn-danger">Excluir</a>
+                        </td>
+                    </tr>
+                <?php } ?>
             </tbody>
         </table>
 
