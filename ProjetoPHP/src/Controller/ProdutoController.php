@@ -21,10 +21,11 @@ class ClientesController{
         $produto -> setNome($_POST['nome']);
         $dao = new ProdutosDAO();
         if($dao -> inserir($produto)){
-            return "Inserido com sucesso!";
+            $resposta = true;
         }else{
-            return "Erro ao inserir";
+            $resposta = false;
         }
+        require_once "../src/View/listar_produto.php";
     }
 
 }
