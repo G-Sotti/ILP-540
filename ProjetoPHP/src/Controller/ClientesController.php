@@ -33,7 +33,10 @@ class ClientesController{
         }else{
             $resposta = false;
         }
-        ClientesController::abrirListaClientes();
+        $dao = new ClientesDAO();
+        $resultado = $dao->consultar();
+        require_once "../src/View/listar_clientes.php";
+        //ClientesController::abrirListaClientes();
     }
 
     public static function editarCliente($params){
@@ -48,7 +51,10 @@ class ClientesController{
         } else {
             $resposta = false;
         }
-        ClientesController::abrirListaClientes();
+        $dao = new ClientesDAO();
+        $resultado = $dao->consultar();
+        require_once "../src/View/listar_clientes.php";
+        //ClientesController::abrirListaClientes();
     }
     
     public static function excluirCliente($params){
